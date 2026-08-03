@@ -1,0 +1,1 @@
+Call of Duty: Modern Warfare (2019/2022/2023), Sekiro: Shadows Die Twice, Resident Evil, Grand Theft Auto, and God of War, are trademarks of their respective owners. These pages are original fan-made lore summaries and are not affiliated with or endorsed by any publisher.
