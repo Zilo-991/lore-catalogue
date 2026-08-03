@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPERATION FILE :: MODERN WARFARE DOSSIER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="warfare.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="scanline"></div>
+
+<header class="stamp-header">
+  <div class="stamp-bar">
+    <span class="clearance">CLEARANCE :: EYES ONLY</span>
+    <span class="case-code">CASE No. 141-19/22/23</span>
+  </div>
+  <nav class="tabs" id="nav">
+    <a href="#brief" class="tab active">BRIEF</a>
+    <a href="#factions" class="tab">FACTIONS</a>
+    <a href="#operatives" class="tab">OPERATIVES</a>
+    <a href="#timeline" class="tab">TIMELINE</a>
+    <a href="#locations" class="tab">AO</a>
+    <nav class="home">
+      <a href="/lore-catalogue/index.html" class="tab">
+      <i class="fa-solid fa-house"></i></a>
+    </nav>
+  </nav>
+  
+</header>
+
+<main>
+
+  <section id="brief" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">DECLASSIFIED — FIELD DOSSIER</p>
+      <div class="logo">
+            <img src="images/mw-logo.jpg" id = "logo1">
+        </div>
+      <p class="subtitle">A lore case file spanning the rebooted trilogy — MW (2019), MWII (2022), and MWIII (2023) — compiled from field reports, intercepts, and after-action summaries.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">THEATER</span>
+          <span class="meta-value">Urzikstan / Las Almas / Al Mazrah</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">PRIMARY UNIT</span>
+          <span class="meta-value">Task Force 141</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">SPAN</span>
+          <span class="meta-value">2019 — 2023</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">STATUS</span>
+          <span class="meta-value blink">ACTIVE</span>
+        </div>
+      </div>
+      <p class="scroll-hint">▼ scroll to open the file</p>
+    </div>
+  </section>
+
+  <section id="factions" class="section">
+    <div class="section-head">
+      <p class="eyebrow">SECTION I</p>
+      <h2 class="title-stencil small">KNOWN FACTIONS</h2>
+      <p class="section-desc">Six organizations drive the conflict across all three operations. Tap a redaction bar to declassify.</p>
+    </div>
+
+    <div class="faction-grid">
+
+      <article class="dossier-card card-friendly">
+        <div class="faction-img">
+          <img src="images/factions/coalition.jpg" alt="The Coalition" loading="lazy">
+          <span class="img-fallback">IMAGE PENDING</span>
+        </div>
+        <div class="card-top">
+          <span class="tag tag-friendly">ALLIED</span>
+          <h3>The Coalition</h3>
+        </div>
+        <div class="redact">
+          <p class="redact-text">A rebel resistance movement fighting to free the fictional nation of Urzikstan from a brutal occupation. Led by Farah Karim, the Coalition partners with Western operators during the 2019 conflict, trading local knowledge of the terrain for support against a far better-armed occupying force.</p>
+          <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+          <button class="bar" type="button" aria-expanded="false">
+            <span class="bar-label">TAP TO DECLASSIFY</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="dossier-card card-friendly">
+        <div class="faction-img">
+          <img src="images/factions/tf141.jpg" alt="Task Force 141" loading="lazy">
+          <span class="img-fallback">IMAGE PENDING</span>
+        </div>
+        <div class="card-top">
+          <span class="tag tag-friendly">ALLIED</span>
+          <h3>Task Force 141</h3>
+        </div>
+        <div class="redact">
+          <p class="redact-text">A multinational special operations unit reassembled after the fall of its previous incarnation. Operating under Captain John Price, the task force answers to no single government, drawing operators from the SAS and beyond to run deniable missions against threats too large for conventional forces.</p>
+          <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+          <button class="bar" type="button" aria-expanded="false">
+            <span class="bar-label">TAP TO DECLASSIFY</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="dossier-card">
+        <div class="faction-img">
+          <img src="images/factions/shadow-co.jpg" alt="Shadow Company" loading="lazy">
+          <span class="img-fallback">IMAGE PENDING</span>
+        </div>
+        <div class="card-top">
+          <span class="tag tag-hostile">HOSTILE PMC</span>
+          <h3>Shadow Company</h3>
+        </div>
+        <div class="redact">
+          <p class="redact-text">A private military contractor built from former special-forces operators, bankrolled through black-market arms deals. Nominally a security firm, Shadow Company blurs the line between contractor and cartel muscle, and its command structure answers to interests far removed from any flag.</p>
+          <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+          <button class="bar" type="button" aria-expanded="false">
+            <span class="bar-label">TAP TO DECLASSIFY</span>
+          </button>
+        </div>
+      </article>
+
+ <article class="dossier-card card-friendly">
+              <div class="faction-img">
+                <img src="images/factions/los-vaq.jpg" alt="Los Vaqueros" loading="lazy">
+                <span class="img-fallback">IMAGE PENDING</span>
+              </div>
+              <div class="card-top">
+                <span class="tag tag-friendly">ALLIED</span>
+                <h3>Los Vaqueros</h3>
+              </div>
+              <div class="redact">
+                <p class="redact-text">An elite unit of the Mexican Special Forces, led by Colonel Alejandro Vargas alongside with his second-in-command, Major Rodolfo Parra. All soldiers of the unit are handpicked for their loyalty to the country and their skills.</p>
+                <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+                <button class="bar" type="button" aria-expanded="false">
+                  <span class="bar-label">TAP TO DECLASSIFY</span>
+                </button>
+              </div>
+      </article>
+
+      <article class="dossier-card">
+        <div class="faction-img">
+          <img src="images/factions/las-almas.jpg" alt="Las Almas Cartel" loading="lazy">
+          <span class="img-fallback">IMAGE PENDING</span>
+        </div>
+        <div class="card-top">
+          <span class="tag tag-hostile">CARTEL</span>
+          <h3>Las Almas Cartel</h3>
+        </div>
+        <div class="redact">
+          <p class="redact-text">A powerful narco-trafficking organization rooted in the fictional city of Las Almas. The cartel's territory and smuggling routes become the battleground for a proxy fight between the task force, a militant faction, and the contractors circling both.</p>
+          <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+          <button class="bar" type="button" aria-expanded="false">
+            <span class="bar-label">TAP TO DECLASSIFY</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="dossier-card">
+        <div class="faction-img">
+          <img src="images/factions/al-qatala.jpg" alt="Al-Qatala" loading="lazy">
+          <span class="img-fallback">IMAGE PENDING</span>
+        </div>
+        <div class="card-top">
+          <span class="tag tag-hostile">MILITANT</span>
+          <h3>Al-Qatala</h3>
+        </div>
+        <div class="redact">
+          <p class="redact-text">An extremist militant network operating out of the fictional Republic of Al Qatala, formed from the remnants of an earlier insurgency. Its leadership pursues heavy ordnance through cartel connections, pulling the task force's operation across two continents.</p>
+          <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+          <button class="bar" type="button" aria-expanded="false">
+            <span class="bar-label">TAP TO DECLASSIFY</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="dossier-card">
+        <div class="faction-img">
+          <img src="images/factions/konni-group.jpg" alt="Konni Group" loading="lazy">
+          <span class="img-fallback">IMAGE PENDING</span>
+        </div>
+        <div class="card-top">
+          <span class="tag tag-hostile">ULTRANATIONALIST</span>
+          <h3>Konni Group</h3>
+        </div>
+        <div class="redact">
+          <p class="redact-text">An ultranationalist paramilitary network rebuilt around the freed war criminal Vladimir Makarov. The group stages a prison break to spring its leader, then expands rapidly through open territory, forcing the task force into wide-scale combat operations to contain it.</p>
+          <button class="reclassify-btn" type="button">▮ RE-CLASSIFY</button>
+          <button class="bar" type="button" aria-expanded="false">
+            <span class="bar-label">TAP TO DECLASSIFY</span>
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+   <section id="operatives" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">SECTION II</p>
+      <h2 class="title-stencil small">OPERATIVE PROFILES</h2>
+      <p class="section-desc">Personnel files, condensed, spanning all three operations. Hover a row to pull the photo from cold storage.</p>
+    </div>
+
+    <div class="operative-list">
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/price.jpg" alt="Captain John Price">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">01</span>
+          <h3>Captain John Price</h3>
+          <span class="op-role">Commanding Officer, TF 141</span>
+          <span class="op-era">MW (2019) · MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>The veteran architect of the reformed task force. Price operates with the long view — willing to bend rules of engagement and burn political capital if it keeps the larger war contained.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/soap.jpg" alt="Sgt. John Soap MacTavish">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">02</span>
+          <h3>Sgt. John "Soap" MacTavish</h3>
+          <span class="op-role">Second-in-Command</span>
+          <span class="op-era">MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>A younger, sharper-edged version of the sergeant familiar from earlier files. Soap is Price's second and the operative most often first through the door.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/ghost.jpg" alt="Lt. Simon Ghost Riley">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">03</span>
+          <h3>Lt. Simon "Ghost" Riley</h3>
+          <span class="op-role">Task Force Operative</span>
+          <span class="op-era">MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>Rarely seen without his balaclava, Ghost is defined by a controlled brutality and a past he keeps sealed tighter than any case file. His methods raise questions even inside the unit.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/gaz.jpg" alt="Sgt. Kyle Gaz Garrick">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">04</span>
+          <h3>Sgt. Kyle "Gaz" Garrick</h3>
+          <span class="op-role">Metropolitan Police / SAS Liaison</span>
+          <span class="op-era">MW (2019) · MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>Recruited out of London's Metropolitan Police firearms unit, Gaz brings a domestic law-enforcement perspective to a team built for foreign deniable action.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/vargas.jpg" alt="Col. Alejandro Vargas">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">05</span>
+          <h3>Col. Alejandro Vargas</h3>
+          <span class="op-role">Commander, Los Vaqueros</span>
+          <span class="op-era">MWII (2022)</span>
+        </div>
+        <p>Leader of a Mexican special-forces unit operating against the cartel from within its own territory, Vargas becomes the task force's essential regional partner.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/laswell.jpg" alt="Kate Laswell">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">06</span>
+          <h3>Kate Laswell</h3>
+          <span class="op-role">CIA Handler</span>
+          <span class="op-era">MW (2019) · MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>The intelligence officer who keeps the task force's deniable operations funded and off the books, navigating agency politics from a desk thousands of miles from the fighting.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/graves.jpg" alt="Philip Graves">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">07</span>
+          <h3>Philip Graves</h3>
+          <span class="op-role">Commander, Shadow Company</span>
+          <span class="op-era">MWII (2022)</span>
+        </div>
+        <p>The public face of Shadow Company's contract work — polished, self-assured, and running an agenda that puts him on a collision course with Price's unit.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/farah.jpg" alt="Farah Karim">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">08</span>
+          <h3>Farah Karim</h3>
+          <span class="op-role">Commander, The Coalition</span>
+          <span class="op-era">MW (2019)</span>
+        </div>
+        <p>A resistance leader forged by a childhood spent surviving occupation. Farah fights for Urzikstan's sovereignty first and any allied agenda a distant second, and expects her partners to keep up.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/alex.jpg" alt="Alex">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">09</span>
+          <h3>Alex</h3>
+          <span class="op-role">CIA Paramilitary Officer</span>
+          <span class="op-era">MW (2019)</span>
+        </div>
+        <p>An American operative embedded with the Coalition during the Urzikstan conflict, building the kind of trust with Farah's fighters that outlasts the mission that created it.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/barkov.jpg" alt="General Roman Barkov">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">10</span>
+          <h3>General Roman Barkov</h3>
+          <span class="op-role">Occupying Force Commander</span>
+          <span class="op-era">MW (2019)</span>
+        </div>
+        <p>The general behind Urzikstan's occupation, willing to orchestrate atrocities and pin the blame elsewhere if it keeps his campaign politically survivable.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/makarov.jpg" alt="Vladimir Makarov">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">11</span>
+          <h3>Vladimir Makarov</h3>
+          <span class="op-role">Leader, Konni Group</span>
+          <span class="op-era">MWIII (2023)</span>
+        </div>
+        <p>A war criminal freed from custody by his own network, Makarov rebuilds an ultranationalist movement with a personal, almost surgical cruelty that makes him the task force's most dangerous target yet.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/shepherd.jpg" alt="General Shepherd">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+        <div class="op-id">
+          <span class="op-code">12</span>
+          <h3>General Shepherd</h3>
+          <span class="op-role">Undisclosed</span>
+          <span class="op-era">MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>A senior officer with old ties to the task force, revealed to be steering events from behind the scenes for reasons that have nothing to do with the mission he claims to serve.</p>
+      </div>
+
+      <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/rodolfo.jpg" alt="Sgt. Major Rodolfo Parra">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+
+        <div class="op-id">
+          <span class="op-code">13</span>
+          <h3>Sgt. Major Rodolfo "Rudy" Parra </h3>
+          <span class="op-role">2nd Commander, Los Vaqueros</span>
+          <span class="op-era">MWII (2022)</span>
+        </div>
+        <p>Grew up in Las Almas and joined the Mexican Army serving 20 years alongside Alejandro. At some point, he passed selection to join the Fuerza Especiales and Los Vaqueros.</p>
+      </div>
+      
+        <div class="operative-row">
+        <div class="photo-frame">
+          <img class="op-photo" src="images/operatives/nikolai.jpg" alt="Sgt. Major Rodolfo Parra">
+          <span class="photo-label">CLASSIFIED</span>
+        </div>
+
+        <div class="op-id">
+          <span class="op-code">14</span>
+          <h3>Nikolai</h3>
+          <span class="op-role">Fixer</span>
+          <span class="op-era">MW (2019) · MWII (2022) · MWIII (2023)</span>
+        </div>
+        <p>Previously a soldier in the Russian Army. His involvement with the West began when he was stationed to guard the Soviet embassy in Copenhagen. After leaving the military, he became a "fixer" with valuable above-board and underworld connections.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="timeline" class="section">
+    <div class="section-head">
+      <p class="eyebrow">SECTION III</p>
+      <h2 class="title-stencil small">CAMPAIGN TIMELINE</h2>
+      <p class="section-desc">Key events reconstructed from after-action reports, in chronological order across all three operations.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-code">MW '19 · LOG 001</span>
+        <h4>Urzikstan Falls Under Occupation</h4>
+        <p>A brutal military occupation grips the fictional nation of Urzikstan, with General Barkov's forces answering any resistance with overwhelming force.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MW '19 · LOG 002</span>
+        <h4>A Chemical Attack Is Pinned on the Rebels</h4>
+        <p>An atrocity carried out by the occupying force is framed as an act of terror by Farah's Coalition fighters, hardening international opinion against the people it was meant to help.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MW '19 · LOG 003</span>
+        <h4>Price and Alex Join the Fight</h4>
+        <p>Captain Price and CIA officer Alex embed with the Coalition, helping Farah's fighters turn the tide against Barkov while a separate thread tracks the militant group Al-Qatala.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWII '22 · LOG 004</span>
+        <h4>A Missile Goes Missing</h4>
+        <p>A shipment of Western-made precision missiles is stolen en route, setting off a search that stretches from Amsterdam back to the Middle East.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWII '22 · LOG 005</span>
+        <h4>Task Force 141 Reforms</h4>
+        <p>Price reassembles a small, trusted team to hunt the missiles quietly, before the story of who has them becomes a diplomatic incident.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWII '22 · LOG 006</span>
+        <h4>The Las Almas Connection</h4>
+        <p>The trail leads to a cartel stronghold, forcing the task force into an uneasy alliance with a local special-forces unit fighting the same enemy from the inside.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWII '22 · LOG 007</span>
+        <h4>Shadow Company Surfaces</h4>
+        <p>A private contractor with its own supply lines into the conflict begins working every angle, and its interests turn out to run deeper than a simple security contract.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWII '22 · LOG 008</span>
+        <h4>An Uneasy Endgame</h4>
+        <p>The hunt for the missiles collapses into a wider confrontation between the task force, the cartel, the militants, and the contractors — with no side fully in control of the outcome.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWIII '23 · LOG 009</span>
+        <h4>Makarov Breaks Free</h4>
+        <p>The Konni Group stages a prison break to free Vladimir Makarov, a war criminal whose ultranationalist ambitions have been contained for years.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWIII '23 · LOG 010</span>
+        <h4>Open Conflict Spreads</h4>
+        <p>Makarov's network expands faster than the task force can track it, pulling operations into sprawling, open combat across contested territory.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWIII '23 · LOG 011</span>
+        <h4>A Familiar Face Turns</h4>
+        <p>A senior officer with a long history alongside the task force is revealed to have been steering the crisis from behind the scenes, upending who the team can trust.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-code">MWIII '23 · LOG 012</span>
+        <h4>The Task Force Regroups</h4>
+        <p>With Makarov's network scattered and the truth about the betrayal exposed, Price's team is left to pick up the pieces of a war fought on two fronts at once.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">SECTION IV</p>
+      <h2 class="title-stencil small">AREAS OF OPERATION</h2>
+      <p class="section-desc">Confirmed theaters of engagement.</p>
+    </div>
+
+    <div class="location-grid">
+      <div class="loc-card">
+        <h4>Urzikstan</h4>
+        <p>A fictional nation caught between occupation and rebellion — the primary battleground of the 2019 conflict and a flashpoint again in 2023.</p>
+      </div>
+      <div class="loc-card">
+        <h4>Las Almas</h4>
+        <p>A dense, fictional Mexican city and cartel stronghold — the primary urban battleground of the 2022 campaign.</p>
+      </div>
+      <div class="loc-card">
+        <h4>Al Mazrah</h4>
+        <p>A sprawling fictional Middle Eastern region contested by militant forces, contractors, and the task force alike.</p>
+      </div>
+      <div class="loc-card">
+        <h4>Amsterdam</h4>
+        <p>The European city where the search for the stolen missiles first breaks open, in the shadow of its canals and nightlife.</p>
+      </div>
+      <div class="loc-card">
+        <h4>San Ambrosio Cove</h4>
+        <p>A coastal smuggling route used to move contraband beneath the notice of conventional patrols.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO DOSSIER — Call of Duty: Modern Warfare (2019), Modern Warfare II (2022), and Modern Warfare III (2023) are trademarks of their respective owners. This file is an original fan-made lore summary and is not affiliated with or endorsed by the publisher.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biohazard Specimen Log :: Resident Evil Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=VT323&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="biohazard.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="crt-lines"></div>
+
+<header class="lab-header">
+  <div class="header-inner">
+    <span class="brand"><span class="biohazard" aria-hidden="true">☣</span> SPECIMEN LOG</span>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#bosses" class="tab">B.O.W. Log</a>
+      <a href="#personnel" class="tab">Personnel</a>
+      <a href="#incidents" class="tab">Incidents</a>
+      <a href="#sites" class="tab">Sites</a>
+      <a href="/lore-catalogue/index.html" class="tab">
+      <i class="fa-solid fa-house"></i></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <span class="bg-biohazard" aria-hidden="true">☣</span>
+    <div class="hero-inner">
+      <p class="eyebrow">UNAUTHORIZED SPECIMEN &amp; PERSONNEL LOG</p>
+      <div class="logo">
+            <img src="images/re-logo.webp" id = "logo1">
+        </div>
+      <p class="subtitle">A working record of the bio-organic weapons, outbreaks, and survivors that trace back to a single pharmaceutical conglomerate's research — and the chaos that outlived it.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">ORIGIN</span>
+          <span class="meta-value">Umbrella Corp. bio-weapons research</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">PRIMARY AGENT</span>
+          <span class="meta-value">T-Virus &amp; its derivatives</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">STATUS</span>
+          <span class="meta-value blink">CONTAINMENT FAILED</span>
+        </div>
+      </div>
+      <p class="scroll-hint">▼ scroll to view the log</p>
+    </div>
+  </section>
+
+  <section id="bosses" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Log Section I</p>
+      <h2 class="title-lab small">B.O.W. Log — Bosses &amp; Mini-Bosses</h2>
+      <p class="section-desc">Notable bio-organic weapons encountered across incidents. Threat ratings reflect field reports, not lab projections.</p>
+    </div>
+
+    <div class="boss-grid">
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/tyrant.jpg" alt="Tyrant (T-002)" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>Tyrant (T-002)</h3>
+            <span class="origin-tag">Spencer Mansion Incident</span>
+          </div>
+          <div class="threat threat-extreme">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">Extreme</span>
+          </div>
+          <p>Umbrella's first mass-produced bio-weapon prototype, engineered for raw durability over subtlety. It's less an ambush predator than a wall that keeps coming after you've already won.</p>
+        </div>
+      </article>
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/nemesis.jpg" alt="Nemesis-T Type" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>Nemesis-T Type</h3>
+            <span class="origin-tag">Raccoon City Outbreak</span>
+          </div>
+          <div class="threat threat-extreme">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">Extreme</span>
+          </div>
+          <p>A specialized hunter unit built specifically to eliminate S.T.A.R.S. survivors, distinguished from earlier Tyrants by problem-solving instinct and an unsettling one-word vocabulary.</p>
+        </div>
+      </article>
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/mr-x.jpg" alt="Mr. X" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>Mr. X <span class="subname">(T-00 Model)</span></h3>
+            <span class="origin-tag">Raccoon City Police Dept.</span>
+          </div>
+          <div class="threat threat-high">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">High</span>
+          </div>
+          <p>A pursuit-type bioweapon deployed to erase evidence of Umbrella's role in the outbreak, notable for a relentless, unscripted pursuit that never quite lets a survivor feel safe.</p>
+        </div>
+      </article>
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/birkin.jpg" alt="William Birkin" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>William Birkin</h3>
+            <span class="origin-tag">NEST Underground Lab</span>
+          </div>
+          <div class="threat threat-extreme">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">Extreme</span>
+          </div>
+          <p>A brilliant, paranoid virologist who injects himself with his own unfinished creation rather than surrender it, mutating repeatedly into something less human with every encounter.</p>
+        </div>
+      </article>
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/lisa-trevor.jpg" alt="Lisa Trevor" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>Lisa Trevor</h3>
+            <span class="origin-tag">Spencer Mansion Grounds</span>
+          </div>
+          <div class="threat threat-high">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">High</span>
+          </div>
+          <p>A victim of decades of unauthorized human experimentation, kept alive far longer than any single treatment should allow, wandering the mansion grounds in grief for a mother who never existed.</p>
+        </div>
+      </article>
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/jack-baker.jpg" alt="Jack Baker" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>Jack Baker</h3>
+            <span class="origin-tag">Baker Estate, Dulvey</span>
+          </div>
+          <div class="threat threat-moderate">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">Moderate–High</span>
+          </div>
+          <p>The head of an infected Louisiana family, made functionally unkillable by a fungal parasite that keeps rebuilding him no matter how thoroughly he's put down.</p>
+        </div>
+      </article>
+
+      <article class="boss-card">
+        <div class="boss-img">
+          <img src="images/bosses/dimitrescu.jpg" alt="Alcina Dimitrescu" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <div class="boss-body">
+          <div class="boss-top">
+            <h3>Alcina Dimitrescu</h3>
+            <span class="origin-tag">Eastern European Village</span>
+          </div>
+          <div class="threat threat-high">
+            <span class="threat-label">Threat</span>
+            <span class="threat-track"><span class="threat-fill"></span></span>
+            <span class="threat-value">High</span>
+          </div>
+          <p>Matriarch of a cursed noble house, granted monstrous size and strength by a parasitic agent, ruling her castle with an unhurried, aristocratic cruelty.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="personnel" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">Log Section II</p>
+      <h2 class="title-lab small">Personnel of Record</h2>
+      <p class="section-desc">Survivors, agents, and one former captain, tracked across successive incidents.</p>
+    </div>
+
+    <div class="personnel-list">
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/jill.jpg" alt="Jill Valentine">
+        </div>
+        <div class="person-id">
+          <h3>Jill Valentine</h3>
+          <span class="person-role">S.T.A.R.S. Alpha Team, later BSAA</span>
+        </div>
+        <p>The Spencer Mansion's most methodical survivor, whose lock-picking and puzzle instincts kept her team alive when firepower alone wasn't going to cut it.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/chris.jpg" alt="Chris Redfield">
+        </div>
+        <div class="person-id">
+          <h3>Chris Redfield</h3>
+          <span class="person-role">S.T.A.R.S. Alpha Team, later BSAA</span>
+        </div>
+        <p>A former Air Force pilot turned Umbrella's most persistent enemy, following the bio-weapons trail from one continent to the next long after most people would have stopped.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/leon.jpg" alt="Leon S. Kennedy">
+        </div>
+        <div class="person-id">
+          <h3>Leon S. Kennedy</h3>
+          <span class="person-role">Rookie RPD officer, later federal agent</span>
+        </div>
+        <p>A police officer whose first day on the job happened to coincide with a city-wide outbreak, and who somehow made a career out of surviving the sequel incidents too.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/claire.jpg" alt="Claire Redfield">
+        </div>
+        <div class="person-id">
+          <h3>Claire Redfield</h3>
+          <span class="person-role">Independent investigator, later anti-bioterrorism NGO</span>
+        </div>
+        <p>Chris's sister, pulled into the same fight from the opposite direction — searching for family first, and finding a conspiracy along the way that she refuses to let go of.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/ada.jpg" alt="Ada Wong">
+        </div>
+        <div class="person-id">
+          <h3>Ada Wong</h3>
+          <span class="person-role">Freelance operative</span>
+        </div>
+        <p>A recurring presence at nearly every major incident, working an agenda that never quite lines up with anyone else's — allied, adversarial, or somewhere she alone understands.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/wesker.jpg" alt="Albert Wesker">
+        </div>
+        <div class="person-id">
+          <h3>Albert Wesker</h3>
+          <span class="person-role">Former S.T.A.R.S. captain</span>
+        </div>
+        <p>The mission commander who sold his own team out to watch a bio-weapon in action, and whose ambitions only grow less containable the longer he survives the fallout.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/ethan.jpg" alt="Ethan Winters">
+        </div>
+        <div class="person-id">
+          <h3>Ethan Winters</h3>
+          <span class="person-role">Civilian</span>
+        </div>
+        <p>An ordinary person with no combat background, dropped into successive nightmares for one consistent reason: trying to get his family back home safely.</p>
+      </div>
+
+      <div class="personnel-row">
+        <div class="photo-frame">
+          <img class="person-photo" src="images/personnel/rebecca.jpg" alt="Rebecca Chambers">
+        </div>
+        <div class="person-id">
+          <h3>Rebecca Chambers</h3>
+          <span class="person-role">S.T.A.R.S. Bravo Team medic</span>
+        </div>
+        <p>The youngest member of Bravo team, whose field medicine and lab instincts outpace her rank on a mission that was supposed to be routine.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="incidents" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Log Section III</p>
+      <h2 class="title-lab small">Incident Record</h2>
+      <p class="section-desc">Major containment failures, in chronological order.</p>
+    </div>
+
+    <div class="incident-list">
+      <div class="incident-item">
+        <span class="incident-code">FILE 01</span>
+        <h4>The Spencer Mansion Incident</h4>
+        <p>A S.T.A.R.S. team investigating a string of disappearances in the Arklay Mountains discovers an underground bio-weapons lab beneath what looked like an abandoned estate.</p>
+      </div>
+      <div class="incident-item">
+        <span class="incident-code">FILE 02</span>
+        <h4>The Raccoon City Outbreak</h4>
+        <p>A viral agent escapes containment within city limits and spreads faster than any response can keep pace with, ending in a full evacuation and an airstrike that erases the city from the map.</p>
+      </div>
+      <div class="incident-item">
+        <span class="incident-code">FILE 03</span>
+        <h4>Exposure of the Antarctic Facility</h4>
+        <p>A hidden research base is uncovered and dismantled as international scrutiny of the responsible corporation finally catches up with its buried infrastructure.</p>
+      </div>
+      <div class="incident-item">
+        <span class="incident-code">FILE 04</span>
+        <h4>The Corporation's Collapse</h4>
+        <p>Mounting evidence and internal betrayal bring down the pharmaceutical conglomerate behind the outbreaks, though its research and its rivals both outlive it.</p>
+      </div>
+      <div class="incident-item">
+        <span class="incident-code">FILE 05</span>
+        <h4>The Baker Family Incident</h4>
+        <p>An isolated Louisiana family is transformed by a mind-altering organism, drawing in an outside investigator who wasn't looking for anything more than his missing wife.</p>
+      </div>
+      <div class="incident-item">
+        <span class="incident-code">FILE 06</span>
+        <h4>The Village Incident</h4>
+        <p>A remote Eastern European village conceals a bio-weapon experiment far older than it looks, unearthed when an ordinary family's night goes catastrophically wrong.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">Log Section IV</p>
+      <h2 class="title-lab small">Sites of Record</h2>
+      <p class="section-desc">Locations tied directly to a containment failure.</p>
+    </div>
+
+    <div class="site-grid">
+      <div class="site-card">
+        <div class="site-img">
+          <img src="images/events/spencer.jpg" alt="Spencer Mansion" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+            <h4>Spencer Mansion</h4>
+            <p>A secluded estate in the Arklay Mountains, built as a decoy for the research facility hidden beneath it.</p>
+      </div>
+
+      <div class="site-card">
+        <div class="site-img">
+          <img src="images/events/raccoon.jpg" alt="Raccoon City" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <h4>Raccoon City</h4>
+        <p>A Midwestern company town that owed its whole economy to the corporation whose experiments eventually consumed it.</p>
+      </div>
+      <div class="site-card">
+        <div class="site-img">
+          <img src="images/events/rpd.jpg" alt="RPD" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <h4>Raccoon Police Department</h4>
+        <p>A repurposed precinct that became one of the last organized shelters as the outbreak overran the rest of the city.</p>
+      </div>
+      <div class="site-card">
+        <div class="site-img">
+          <img src="images/events/uaf.jpg" alt="UAF" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <h4>Umbrella Antarctic Facility</h4>
+        <p>A remote research base built far from oversight, housing some of the corporation's most advanced and least authorized work.</p>
+      </div>
+      <div class="site-card">
+        <div class="site-img">
+          <img src="images/events/baker.jpg" alt="Baker Estate" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <h4>Baker Estate, Dulvey</h4>
+        <p>An old plantation homestead turned into a trap by the organism spreading through the family living there.</p>
+      </div>
+      <div class="site-card">
+        <div class="site-img">
+          <img src="images/events/village.jpg" alt="EU Village" loading="lazy">
+          <span class="img-fallback">image pending</span>
+        </div>
+        <h4>Eastern European Village</h4>
+        <p>A folkloric settlement whose four ruling houses each conceal a different piece of the same buried experiment.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Resident Evil is a trademark of Capcom. This page is an original fan-made lore summary and is not affiliated with or endorsed by Capcom.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
