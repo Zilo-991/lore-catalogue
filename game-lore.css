@@ -36,6 +36,8 @@
   --gow-a:#800000;
   --gow-b:#ffffff;
   --gow-c:#0f719e;
+  --tekken-b: #ff5a36;
+  --tekken-a: #7a2c1c;
 }
 
 html { scroll-behavior: smooth; }
@@ -131,6 +133,7 @@ a { color: inherit; text-decoration: none; }
 .re-card .drawer-swatch{ background: linear-gradient(180deg, var(--re-a), var(--re-b)); }
 .gta-card .drawer-swatch { background: linear-gradient(180deg, var(--gta-a), var(--gta-b)); }
 .gow-card .drawer-swatch { background: linear-gradient(180deg, var(--gow-a), var(--gow-b), var(--gow-c)); }
+.tekken-card .drawer-swatch { background: linear-gradient(10deg, var(--tekken-a), var(--tekken-b)); }
 
 .drawer-label {
   font-family: 'Special Elite', monospace;
@@ -152,6 +155,7 @@ a { color: inherit; text-decoration: none; }
 .re-card:hover .drawer-body h2 { color: var(--re-a); }
 .gta-card:hover .drawer-body h2 { color: var(--gta-a); }
 .gow-card:hover .drawer-body h2 { color: var(--gow-c); }
+.tekken-card:hover .drawer-body h2 { color: var(--tekken-a); }
 
 .drawer-desc {
   color: var(--parch-dim);
