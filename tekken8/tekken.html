@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fighter Registry :: Tekken 8 Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="tekken.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="scanlines"></div>
+
+<header class="hud-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="images/t8.jpg" id = "logo">
+    </div>
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#base-roster" class="tab">Base Roster</a>
+      <a href="#dlc-roster" class="tab">DLC Fighters</a>
+      <a href="/lore-catalogue/index.html" class="tab">
+      <i class="fa-solid fa-house"></i></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">KING OF IRON FIST TOURNAMENT — ENTRANT LIST</p>
+      <div class="logo">
+            <img src="images/tekken8_logo.jpg" id = "logo1">
+        </div>
+      <p class="subtitle">TEKKEN 8 continues the tragic saga of the Mishima bloodline and its world-shaking father-and-son grudge matches. After defeating his father, Heihachi Mishima, Kazuya continues his conquest for global domination, using the forces of G Corporation to wage war on the world. Jin is forced to face his fate head-on as he is reunited with his long-lost mother and seeks to stop his father Kazuya's reign of terror.
+      
+        Experience the next chapter in the longest-running videogame storyline with 32 redesigned, unique fighters and master the all-new ‘Heat’ system to crush your opponents. Enjoy high-fidelity graphics, developed for the new generation of hardware, to showcase every moment of impact and aggressive super moves.
+        
+ With a variety of single-player content to explore, such as the brand-new Arcade Quest mode and an in-depth customization system for both playable and avatar characters, TEKKEN 8 introduces the most thrilling experience yet.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">BASE ROSTER</span>
+          <span class="meta-value">32 fighters</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">DLC FIGHTERS</span>
+          <span class="meta-value">12 fighters, 3 seasons</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">STATUS</span>
+          <span class="meta-value blink">NEW CHALLENGER!</span>
+        </div>
+      </div>
+      <p class="scroll-hint">▼ tap any fighter for their file</p>
+    </div>
+  </section>
+
+  <section id="base-roster" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Entrant Class I</p>
+      <h2 class="title-hud small">Base Roster — 32 Fighters</h2>
+      <p class="section-desc">Every fighter available from launch, no unlocks required.</p>
+    </div>
+    <div class="fighter-grid" id="base-grid"></div>
+  </section>
+
+  <section id="dlc-roster" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">Entrant Class II</p>
+      <h2 class="title-hud small">DLC Fighters — 12 Fighters</h2>
+      <p class="section-desc">Added in waves of four across three character seasons, including two guest fighters from outside the franchise.</p>
+    </div>
+
+    <h3 class="season-label">Season 1</h3>
+    <div class="fighter-grid" id="s1-grid"></div>
+
+    <h3 class="season-label">Season 2</h3>
+    <div class="fighter-grid" id="s2-grid"></div>
+
+    <h3 class="season-label">Season 3</h3>
+    <div class="fighter-grid" id="s3-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>UNOFFICIAL FAN ARCHIVE — Tekken 8 is a trademark of Bandai Namco Entertainment. Guest fighters belong to their respective owners (Square Enix; Baki by Keisuke Itagaki). This page is an original fan-made summary and is not affiliated with or endorsed by any of them.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
