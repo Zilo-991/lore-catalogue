@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anymus Database</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="creed.css">
+<link rel ="icon" type="image/png" href="images/guild.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-mark" aria-hidden="true">◈</span>
+      <span class="brand-word">ASSASSIN'S<br>CREED</span>
+    </a>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview <span class="caret">▾</span></a>
+      <a href="#factions" class="tab">Factions <span class="caret">▾</span></a>
+      <a href="#games" class="tab">Chronicles <span class="caret">▾</span></a>
+      <a href="#modern" class="tab">Modern Day</a>
+    </nav>
+    <div class="header-actions">
+      <a href="/lore-catalogue/index.html" class="btn btn-solid">Catalogue Home</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    
+    <div class="hero-panel">
+      <p class="eyebrow">A Genetic-Memory Record</p>
+      <div class="logo">
+            <img src="images/ac-logo.png" id = "logo1">
+        </div>
+      <p class="subtitle">A reconstructed record of the war between the Assassin Brotherhood and the Templar Order, relived one ancestor's memories at a time — from the Third Crusade to Sengoku Japan.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">Chronicles</span>
+          <span class="meta-value">12</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Individuals</span>
+          <span class="meta-value">35</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="factions" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Core Conflict</p>
+      <h2 class="title-serif small">The Two Sides</h2>
+      <p class="section-desc">Every memory below is a skirmish in the same, much older war.</p>
+    </div>
+
+    <div class="faction-grid">
+      <article class="faction-card assassin">
+        <span class="faction-tag">Allied</span>
+        <h3>The Assassin Brotherhood</h3>
+        <p>A hidden order descended from Bayek and Aya's Hidden Ones, dedicated to protecting free will against anyone who would use ancient power to control it — no matter how good their intentions sound.</p>
+      </article>
+      <article class="faction-card templar">
+        <span class="faction-tag">Hostile</span>
+        <h3>The Templar Order</h3>
+        <p>Descended from the Order of the Ancients, a network convinced that humanity is safer, calmer, and better off with someone else making its decisions — so long as that someone is them.</p>
+      </article>
+      <article class="faction-card isu">
+        <span class="faction-tag">Precursor</span>
+        <h3>The Isu / First Civilization</h3>
+        <p>An advanced civilization that predates recorded history, whose surviving artifacts — the Pieces of Eden — are the real prize both the Brotherhood and the Order have been fighting over all along.</p>
+      </article>
+      <article class="faction-card abstergo">
+        <span class="faction-tag">Modern Templar</span>
+        <h3>Abstergo Industries</h3>
+        <p>A modern pharmaceutical and technology conglomerate serving as the Templar Order's public face, using genetic memory research to hunt down the same artifacts their ancestors chased centuries ago.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="games" class="section alt">
+    <div class="section-head">
+      <p class="eyebrow">Genetic Memory Log</p>
+      <h2 class="title-serif small">Chronicles, by Game</h2>
+      <p class="section-desc">Twelve ancestors, twelve wars, one conflict underneath all of them. Open a title for its Assassins, its Templars, and the conflict that put them at odds.</p>
+    </div>
+    <div id="games-container" class="game-tile-grid"></div>
+  </section>
+
+  <section id="modern" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Present Day</p>
+      <h2 class="title-serif small">Modern Day</h2>
+      <p class="section-desc">The ones actually sitting in the Animus chair, living through all of this secondhand.</p>
+    </div>
+    <div class="char-grid" id="modern-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>UNOFFICIAL FAN ARCHIVE — Assassin's Creed is a trademark of Ubisoft Entertainment. This page is an original fan-made lore summary and is not affiliated with or endorsed by Ubisoft.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
