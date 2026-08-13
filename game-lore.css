@@ -37,9 +37,11 @@
   --gow-b:#ffffff;
   --gow-c:#0f719e;
   --tekken-b: #ff5a36;
-  --tekken-a: #7a2c1c;
+  --tekken-a: #00d4ff;
   --creed-a:#ffffff;
   --creed-b:#abd5fdd0;
+  --farcry-a:#e8551e;
+  --farcry-b: #1e2118;
 }
 
 html { scroll-behavior: smooth; }
@@ -137,6 +139,7 @@ a { color: inherit; text-decoration: none; }
 .gow-card .drawer-swatch { background: linear-gradient(180deg, var(--gow-a), var(--gow-b), var(--gow-c)); }
 .tekken-card .drawer-swatch { background: linear-gradient(10deg, var(--tekken-a), var(--tekken-b)); }
 .creed-card .drawer-swatch { background: linear-gradient(10deg, var(--creed-a), var(--creed-b)); }
+.farcry-card .drawer-swatch { background: linear-gradient(10deg, var(--farcry-a), var(--farcry-b)); }
 
 .drawer-label {
   font-family: 'Special Elite', monospace;
@@ -160,6 +163,7 @@ a { color: inherit; text-decoration: none; }
 .gow-card:hover .drawer-body h2 { color: var(--gow-c); }
 .tekken-card:hover .drawer-body h2 { color: var(--tekken-a); }
 .creed-card:hover .drawer-body h2 { color: var(--creed-b); }
+.farcry-card:hover .drawer-body h2 { color: var(--farcry-a); }
 
 .drawer-desc {
   color: var(--parch-dim);
