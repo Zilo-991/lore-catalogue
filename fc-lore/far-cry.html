@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Far Cry Field Archive</title>
+<link rel ="icon" type="image/ico" href="images/fc.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Barlow+Condensed:wght@500;600&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="farcry.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span class="brand-word">FAR CRY<br><small>Field Archive</small></span>
+    </a>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#games" class="tab">Games</a>
+      <a href="/lore-catalogue/index.html" class="tab">
+      <i class="fa-solid fa-house"></i></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="images/banners/hero.jpg" alt="" aria-hidden="true">
+      <span class="hero-bg-fallback" aria-hidden="true"></span>
+    </div>
+    <div class="hero-panel">
+      <p class="eyebrow">A Field Guide to Eight Wars</p>
+      <h1 class="title-slash">FAR CRY</h1>
+      <p class="subtitle">Eight uprisings, eight strongmen, eight corners of a world worth burning down to save. A record of every protagonist, every antagonist, and every ground they fought over.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">Games</span>
+          <span class="meta-value">8</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Individuals on File</span>
+          <span class="meta-value">32</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Field Files</p>
+      <h2 class="title-slash small">Every Theater, By Game</h2>
+      <p class="section-desc">Open a title for its protagonists, its antagonists, and the place of exploration they fought across.</p>
+    </div>
+    <div id="games-container" class="game-tile-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Far Cry is a trademark of Ubisoft Entertainment. This page is an original fan-made lore summary and is not affiliated with or endorsed by Ubisoft.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
