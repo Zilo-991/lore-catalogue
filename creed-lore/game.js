@@ -87,7 +87,7 @@ if (game) {
     <div class="file-not-found">
       <h2>Chronicle Not Found</h2>
       <p>No game record matches "${requestedId ?? ''}" in the archive.</p>
-      <a class="back-link" href="index.html">← Back to Database</a>
+      <a class="back-link" href="creed.html#games">← Back to Database</a>
     </div>
   `;
 }

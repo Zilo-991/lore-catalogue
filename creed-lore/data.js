@@ -201,11 +201,11 @@ const AC_CHARACTERS = [
     epithet: "One-Eared Demon",
     blurb: "Also known as The Wounded, was a samurai who served as a retainer to the daimyō Oda Nobunaga during the late 16th century." },
   // ===== MODERN DAY =====
-  { id: "desmond", name: "Desmond Miles", game: "modern", role: "Modern Day",
+  { id: "desmond", name: "Desmond Miles", game: "modern", linkGame:"ac1", role: "Modern Day",
     affiliation: "Assassin Brotherhood (modern)", era: "2012 CE, present day",
     epithet: "Born Into the War",
     blurb: "A bartender who spent his whole life running from his Assassin family's legacy, only to be pulled back in and asked to relive his ancestors' memories to stop a global catastrophe he didn't choose." },
-  { id: "layla", name: "Layla Hassan", game: "modern", role: "Modern Day",
+  { id: "layla", name: "Layla Hassan", game: "modern", linkGame:"origins", role: "Modern Day",
     affiliation: "Abstergo, later Assassin Brotherhood (modern)", era: "2018 – 2020 CE, present day",
     epithet: "The Reluctant Successor",
     blurb: "An Abstergo researcher who defects after uncovering more than her employer ever meant for her to see, inheriting a role in the ancient war she spent her career studying from the outside." },

@@ -7,11 +7,20 @@ const view = document.getElementById('file-view');
 const pageTitle = document.getElementById('page-title');
 
 if (character) {
-  pageTitle.textContent = `${character.name}`;
+  pageTitle.textContent = `${character.name} :: Assassin's Creed Archive`;
 
-  const game = AC_GAMES.find(g => g.id === character.game);
+  const game = AC_GAMES.find(g => g.id === character.game)
+    || AC_GAMES.find(g => g.id === character.linkGame);
   const roleCls = character.role === 'Protagonist' ? '' : character.role === 'Antagonist' ? 'antagonist' : 'modern';
-  const gameLabel = game ? game.title : 'Modern Day';
+  const gameLabel = AC_GAMES.find(g => g.id === character.game)?.title || 'Modern Day';
+
+  // point the header's back link at this character's most relevant game page —
+  // every character resolves to one, including Modern Day figures via linkGame
+  const headerBack = document.querySelector('.site-header .tab');
+  if (headerBack && game) {
+    headerBack.href = `game.html?id=${game.id}`;
+    headerBack.textContent = `← Back to ${game.title}`;
+  }
 
   view.innerHTML = `
     <div class="file-scene ${roleCls}">
@@ -43,7 +52,7 @@ if (character) {
     <div class="file-not-found">
       <h2>Memory Not Found</h2>
       <p>No genetic record matches "${requestedId ?? ''}" in the Animus database.</p>
-      <a class="back-link" href="index.html">← Back to Database</a>
+      <a class="back-link" href="creed.html#games">← Back to Chronicles</a>
     </div>
   `;
 }
