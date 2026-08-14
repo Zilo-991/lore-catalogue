@@ -9,20 +9,20 @@ const pageTitle = document.getElementById('page-title');
 if (character) {
   pageTitle.textContent = `${character.name}`;
 
- const game = FC_GAMES.find(g => g.id === character.game);
-  const roleCls = character.role === 'Protagonist' ? '' : character.role === 'Antagonist' ? 'antagonist' : 'modern';
-  const gameLabel = game ? game.title : 'Modern Day'
+  const game = FC_GAMES.find(g => g.id === character.game);
+  const roleCls = character.role === 'Antagonist' ? 'antagonist' : '';
 
-  const headerBack = document.querySelector('site-header .tab');
-  if (headerBack && game){
-    headerBack.href = `game.html?id = ${game.id}`;
-    headerBack.textContent =`← Back to ${game.title}`;
+  // point the header's back link at this character's own game page
+  const headerBack = document.querySelector('.site-header .tab');
+  if (headerBack && game) {
+    headerBack.href = `game.html?id=${game.id}`;
+    headerBack.textContent = `← Back to ${game.title}`;
   }
 
   view.innerHTML = `
     <div class="file-scene ${roleCls}">
       <div class="file-portrait-scene">
-        <img src="images/roster/${character.id}.jpg" alt="${character.name}">
+        <img src="images/roster/${character.id}.png" alt="${character.name}">
         <span class="portrait-fallback">image pending</span>
       </div>
       <span class="corner-bracket" aria-hidden="true"></span>
@@ -31,11 +31,11 @@ if (character) {
         <p class="file-epithet">${character.epithet}</p>
         <div class="file-facts">
           <p><span class="fact-label">Affiliation:</span> <span class="fact-value">${character.affiliation}</span></p>
-          <p><span class="fact-label">Era:</span> <span class="fact-value">${character.era}</span></p>
+          <p><span class="fact-label">Appears in:</span> <span class="fact-value">${game ? game.title : 'Unknown'}</span></p>
         </div>
         <p class="file-blurb">${character.blurb}</p>
         <div class="file-meta-row">
-          <span class="status-pill">${character.role} — ${gameLabel}</span>
+          <span class="status-pill">${character.role}</span>
         </div>
       </div>
     </div>
@@ -47,9 +47,9 @@ if (character) {
 } else {
   view.innerHTML = `
     <div class="file-not-found">
-      <h2>Memory Not Found</h2>
-      <p>No genetic record matches "${requestedId ?? ''}" in the Animus database.</p>
-      <a class="back-link" href="far-cry.html#games">← Back to Database</a>
+      <h2>Character Not Found</h2>
+      <p>No record matches "${requestedId ?? ''}" in the archive.</p>
+      <a class="back-link" href="index.html#games">← Back to Games</a>
     </div>
   `;
 }

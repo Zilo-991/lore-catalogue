@@ -1,8 +1,5 @@
-// ===== Render game cover tiles from data.js =====
+// ===== Render game cover tiles on the hub page =====
 function gameTile(game) {
-  const chars = FC_CHARACTERS.filter(c => c.game === game.id);
-  const protagonists = chars.filter(c => c.role === 'Protagonist').length;
-  const antagonists = chars.filter(c => c.role === 'Antagonist').length;
   return `
     <a class="game-tile" href="game.html?id=${game.id}">
       <div class="tile-cover">
@@ -11,8 +8,7 @@ function gameTile(game) {
       </div>
       <div class="tile-info">
         <span class="tile-title">${game.title}</span>
-        <span class="tile-meta">${game.year} · ${game.location.name}</span>
-        <span class="tile-counts">${protagonists} Protagonist${protagonists===1?'':'s'} · ${antagonists} Antagonist${antagonists===1?'':'s'}</span>
+        <span class="tile-meta">${game.year} · ${game.place}</span>
       </div>
     </a>`;
 }

@@ -32,33 +32,41 @@ if (game) {
       <img src="images/banners/${game.banner}" alt="${game.title}">
       <span class="cover-fallback"><span>${game.title}</span></span>
       <div class="game-banner-overlay">
-        <span class="game-banner-year">${game.year} · ${game.developer}</span>
-        <h1 class="title-slash game-banner-title">${game.title}</h1>
+        <span class="game-banner-year">${game.year} · ${game.place}</span>
+        <h1 class="title-display game-banner-title">${game.title}</h1>
       </div>
     </div>
 
     <div class="game-tabs-wrap">
       <div class="game-tabs" role="tablist">
-        <button class="game-tab active" role="tab" aria-selected="true" data-panel="protagonists">
-          Protagonists <span class="tab-count">${protagonists.length}</span>
+        <button class="game-tab active" role="tab" aria-selected="true" data-panel="protagonist">
+          Protagonist <span class="tab-count">${protagonists.length}</span>
         </button>
-        <button class="game-tab" role="tab" aria-selected="false" data-panel="antagonists">
-          Antagonists <span class="tab-count">${antagonists.length}</span>
+        <button class="game-tab" role="tab" aria-selected="false" data-panel="antagonist">
+          Antagonist <span class="tab-count">${antagonists.length}</span>
         </button>
         <button class="game-tab" role="tab" aria-selected="false" data-panel="place">
           Place of Exploration
         </button>
       </div>
 
-      <div class="game-panel" id="panel-protagonists" role="tabpanel">
-        <div class="char-grid">${protagonists.map(miniCharCard).join('') || '<p class="empty-note">No protagonist profiles on file for this game yet.</p>'}</div>
+      <div class="game-panel" id="panel-protagonist" role="tabpanel">
+        <div class="char-grid">${protagonists.map(miniCharCard).join('') || '<p class="empty-note">No protagonist profile on file yet.</p>'}</div>
       </div>
-      <div class="game-panel" id="panel-antagonists" role="tabpanel" hidden>
-        <div class="char-grid">${antagonists.map(miniCharCard).join('') || '<p class="empty-note">No antagonist profiles on file for this game yet.</p>'}</div>
+      <div class="game-panel" id="panel-antagonist" role="tabpanel" hidden>
+        <div class="char-grid">${antagonists.map(miniCharCard).join('') || '<p class="empty-note">No antagonist profile on file yet.</p>'}</div>
       </div>
       <div class="game-panel" id="panel-place" role="tabpanel" hidden>
-        <h3 class="place-name">${game.location.name}</h3>
-        <p class="conflict-text">${game.location.description}</p>
+        <div class="place-card">
+          <div class="place-img">
+            <img src="images/places/${game.id}.png" alt="${game.place}">
+            <span class="cover-fallback"><span>${game.place}</span></span>
+          </div>
+          <div class="place-body">
+            <h3>${game.place}</h3>
+            <p>${game.placeDesc}</p>
+          </div>
+        </div>
       </div>
     </div>
   `;
@@ -70,6 +78,8 @@ if (game) {
     const img = card.querySelector('.char-img');
     img?.addEventListener('error', () => card.classList.add('img-missing'));
   });
+  const placeImg = view.querySelector('.place-img img');
+  placeImg?.addEventListener('error', () => view.querySelector('.place-img').classList.add('img-missing'));
 
   // tab switching
   const tabs = view.querySelectorAll('.game-tab');
@@ -86,9 +96,9 @@ if (game) {
 } else {
   view.innerHTML = `
     <div class="file-not-found">
-      <h2>Game Not Found</h2>
-      <p>No field file matches "${requestedId ?? ''}" in the archive.</p>
-      <a class="back-link" href="far-cry.html#games">← Back to Games</a>
+      <h2>Region Not Found</h2>
+      <p>No game record matches "${requestedId ?? ''}" in the archive.</p>
+      <a class="back-link" href="index.html#games">← Back to Games</a>
     </div>
   `;
 }
