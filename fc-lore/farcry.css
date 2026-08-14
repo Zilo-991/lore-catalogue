@@ -338,7 +338,10 @@ a { color: inherit; text-decoration: none; }
 .file-scene.antagonist { --role-accent: var(--danger); }
 
 .file-portrait-scene { position: absolute; inset: 0; z-index: 0; }
-.file-portrait-scene img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.file-portrait-scene img {
+  position: relative;
+  padding-left: 60%;
+   width: 100%; height: 100%; object-fit:contain; }
 .file-portrait-scene .portrait-fallback {
   display: none; position: absolute; inset: 0;
   align-items: center; justify-content: center;
