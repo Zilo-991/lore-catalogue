@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devil May Cry Archive</title>
+<link rel ="icon" type="image/ico" href="images/dmc.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Saira+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dmc.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="images/dmc.png" id = "logo">
+    </div>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#games" class="tab">Games</a>
+    </nav>
+    <div class="header-actions">
+      <a href="../index.html" class="btn btn-outline">Catalogue Home</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="images/banners/hero.jpg" alt="" aria-hidden="true">
+      <span class="hero-bg-fallback" aria-hidden="true"></span>
+    </div>
+    <div class="hero-panel reveal">
+      <p class="eyebrow">Jackpot.</p>
+      <h1 class="title-display">Stylish. Loud. Undefeated.</h1>
+      <p class="subtitle">Six chronicles of the Sparda bloodline — devil hunters, demon kings, and the twin brothers caught in between, from a haunted island fortress to a city split open by a demonic tree.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">Games</span>
+          <span class="meta-value">6</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Weapons Catalogued</span>
+          <span class="meta-value">25</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Characters</span>
+          <span class="meta-value">15</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow">Mission Select</p>
+      <h2 class="title-display small">The Games</h2>
+      <p class="section-desc">Open a title for its devil hunter, its demon lord, and the ground they tore up getting to each other.</p>
+    </div>
+    <div id="games-container" class="game-tile-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Devil May Cry is a trademark of Capcom. This page is an original fan-made lore summary and is not affiliated with or endorsed by Capcom.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="reveal.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
