@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splinter Cell Archive</title>
+<link rel ="icon" type="image/ico" href="images/sc.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sc.css">
+</head>
+<body>
+
+<canvas id="worldmap-canvas" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand"><span class="brand-icon" aria-hidden="true">◇</span> SPLINTER CELL</a>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#categories" class="tab">Categories</a>
+    </nav>
+    <div class="header-actions">
+      <a href="../index.html" class="btn btn-outline">Catalogue Home</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <p class="eyebrow">THIRD ECHELON — CLASSIFIED FIELD ARCHIVE</p>
+    <h1 class="title-display">Splinter Cell</h1>
+    <p class="subtitle">A field reference on the operatives, gear, and tradecraft behind two decades of black-ops stealth work — indexed the way the wiki itself keeps it: by category.</p>
+    <div class="hero-meta">
+      <div class="meta-block">
+        <span class="meta-label">Categories</span>
+        <span class="meta-value">6</span>
+      </div>
+      <div class="meta-block">
+        <span class="meta-label">Catalogued Entries</span>
+        <span class="meta-value">26</span>
+      </div>
+      <div class="meta-block">
+        <span class="meta-label">Status</span>
+        <span class="meta-value blink">SIGNAL SECURE</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Field Index</p>
+      <h2 class="title-display small">Popular Categories</h2>
+      <p class="section-desc">Open a category for every entry on file.</p>
+    </div>
+    <div id="categories-container" class="category-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Splinter Cell is a trademark of Ubisoft Entertainment. This page is an original fan-made summary and is not affiliated with or endorsed by Ubisoft.</p>
+</footer>
+
+<script src="worldmap-grid.js"></script>
+<script src="worldmap.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

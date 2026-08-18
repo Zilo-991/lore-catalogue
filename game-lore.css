@@ -45,6 +45,8 @@
   --dmc-a:#4f0d18;
   --dmc-b:#0d0708;
   --dmc-c:#a3182e;
+  --sc-a:#39ff6a;
+  --sc-b:#1c7a3a;
 }
 
 html { scroll-behavior: smooth; }
@@ -144,6 +146,7 @@ a { color: inherit; text-decoration: none; }
 .creed-card .drawer-swatch { background: linear-gradient(10deg, var(--creed-a), var(--creed-b)); }
 .farcry-card .drawer-swatch { background: linear-gradient(10deg, var(--farcry-a), var(--farcry-b)); }
 .dmc-card .drawer-swatch { background: linear-gradient(180deg, var(--dmc-a), var(--dmc-b)); }
+.sc-card .drawer-swatch { background: linear-gradient(180deg, var(--sc-b), var(--sc-a)); }
 
 .drawer-label {
   font-family: 'Special Elite', monospace;
@@ -169,6 +172,8 @@ a { color: inherit; text-decoration: none; }
 .creed-card:hover .drawer-body h2 { color: var(--creed-b); }
 .farcry-card:hover .drawer-body h2 { color: var(--farcry-a); }
 .dmc-card:hover .drawer-body h2 { color: var(--dmc-c); }
+.sc-card:hover .drawer-body h2 { color: var(--sc-b); }
+
 .drawer-desc {
   color: var(--parch-dim);
   font-size: 0.98rem;
