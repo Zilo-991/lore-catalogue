@@ -33,7 +33,7 @@ if (game) {
       <span class="cover-fallback"><span>${game.title}</span></span>
       <div class="game-banner-overlay">
         <span class="game-banner-year">${game.year} · ${game.place}</span>
-        <h1 class="title-display game-banner-title">${game.title}</h1>
+        <img src="images/logos/${game.logo}">
       </div>
     </div>
 
@@ -98,7 +98,7 @@ if (game) {
     <div class="file-not-found">
       <h2>Region Not Found</h2>
       <p>No game record matches "${requestedId ?? ''}" in the archive.</p>
-      <a class="back-link" href="index.html#games">← Back to Games</a>
+      <a class="back-link" href="far-cry.html#games">← Back to Games</a>
     </div>
   `;
 }

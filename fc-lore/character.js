@@ -25,7 +25,6 @@ if (character) {
         <img src="images/roster/${character.id}.png" alt="${character.name}">
         <span class="portrait-fallback">image pending</span>
       </div>
-      <span class="corner-bracket" aria-hidden="true"></span>
       <div class="file-text">
         <h1 class="file-name">${character.name}</h1>
         <p class="file-epithet">${character.epithet}</p>
@@ -49,7 +48,7 @@ if (character) {
     <div class="file-not-found">
       <h2>Character Not Found</h2>
       <p>No record matches "${requestedId ?? ''}" in the archive.</p>
-      <a class="back-link" href="index.html#games">← Back to Games</a>
+      <a class="back-link" href="far-cry.html#games">← Back to Games</a>
     </div>
   `;
 }
