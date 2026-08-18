@@ -37,7 +37,7 @@ function weaponCard(weapon, gameId) {
 }
 
 if (game) {
-  pageTitle.textContent = `${game.title} :: Devil May Cry Archive`;
+  pageTitle.textContent = `${game.title}`;
 
   const chars = DMC_CHARACTERS.filter(c => c.game === game.id);
   const protagonists = chars.filter(c => c.role === 'Protagonist');

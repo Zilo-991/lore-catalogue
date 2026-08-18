@@ -7,7 +7,7 @@ const view = document.getElementById('file-view');
 const pageTitle = document.getElementById('page-title');
 
 if (character) {
-  pageTitle.textContent = `${character.name} :: Devil May Cry Archive`;
+  pageTitle.textContent = `${character.name}`;
 
   const game = DMC_GAMES.find(g => g.id === character.game);
   const roleCls = character.role === 'Antagonist' ? 'antagonist' : '';
