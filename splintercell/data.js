@@ -60,6 +60,8 @@ const SC_ITEMS = [
     blurb: "The standard-issue rifle of Sam's field kit, modular enough to reconfigure for nearly any mission profile." },
   { id: "sc-pistol", name: "SC Pistol", category: "weapons", tag: "Suppressed Sidearm",
     blurb: "A suppressed sidearm built for quiet takedowns rather than firefights, prioritizing precision over stopping power." },
+     { id: "karambit", name: "Karambit", category: "weapons", tag: "Fixed Curved Knife",
+    blurb: "A blade that designed with a quick-draw, is versatile, and deadly with cuts that cause deep gashes and wounds." },
   { id: "sticky-shocker", name: "Sticky Shocker", category: "weapons", tag: "Non-Lethal Round",
     blurb: "A non-lethal projectile round that clings to a target and delivers an incapacitating shock, standard for missions that call for silence over kills." },
   { id: "airfoil-round", name: "Airfoil Round", category: "weapons", tag: "Subsonic Sniper Round",
