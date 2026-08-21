@@ -1,3 +1,27 @@
+// ===== Render the games grid =====
+function gameTile(game) {
+  return `
+    <a class="game-tile" href="game.html?id=${game.id}">
+      <div class="tile-cover">
+        <img src="images/covers/${game.cover}" alt="${game.title}" loading="lazy">
+        <span class="cat-fallback"><span>${game.title}</span></span>
+      </div>
+      <div class="tile-info">
+        <span class="tile-title">${game.title}</span>
+        <span class="tile-year">${game.year}</span>
+      </div>
+    </a>`;
+}
+
+const gamesContainer = document.getElementById('games-container');
+if (gamesContainer) {
+  gamesContainer.innerHTML = SC_GAMES.map(gameTile).join('');
+  gamesContainer.querySelectorAll('.tile-cover').forEach((thumb) => {
+    const img = thumb.querySelector('img');
+    img?.addEventListener('error', () => thumb.classList.add('img-missing'));
+  });
+}
+
 // ===== Render category tiles, matching the wiki's popular-categories grid =====
 function categoryTile(cat) {
   const count = SC_ITEMS.filter(i => i.category === cat.id).length;

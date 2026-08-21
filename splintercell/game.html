@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Splinter Cell Archive</title>
+<link rel ="icon" type="image/ico" href="images/sc.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sc.css">
+</head>
+<body>
+
+<canvas id="worldmap-canvas" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="sc.html" class="brand"><span class="brand-icon" aria-hidden="true">◇</span> SPLINTER CELL</a>
+    <nav class="tabs">
+      <a href="sc.html#games" class="tab">← Back to Games</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="game-view">
+    <!-- populated by game.js -->
+  </section>
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Splinter Cell is a trademark of Ubisoft Entertainment. This page is an original fan-made summary and is not affiliated with or endorsed by Ubisoft.</p>
+</footer>
+
+<script src="worldmap-grid.js"></script>
+<script src="worldmap.js"></script>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

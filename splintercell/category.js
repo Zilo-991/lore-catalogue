@@ -22,7 +22,7 @@ function itemCard(item) {
 }
 
 if (category) {
-  pageTitle.textContent = `${category.label} :: Splinter Cell Archive`;
+  pageTitle.textContent = `${category.label} - Splinter Cell Archive`;
   const items = SC_ITEMS.filter(i => i.category === category.id);
 
   view.innerHTML = `

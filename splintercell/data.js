@@ -4,6 +4,33 @@
    category: "characters" | "weapons" | "uniforms" | "pistols" | "equipment" | "gadgets"
 */
 
+const SC_GAMES = [
+  { id: "sc1", title: "Splinter Cell", year: "2002", cover: "sc1.png", banner: "sc1.png", logo: "sc1.png",
+    blurb: "The mission that introduced Sam Fisher and the Splinter Cell program, establishing stealth, shadow, and deniability as the series' entire language.",
+    threat: "A Georgian ultranationalist movement moving to seize a strategic pipeline region, secretly racing toward a nuclear option nobody in Washington believed they actually had.",
+    location: "Georgia and the wider Caucasus region", locationDesc: "A Cold War-era conflict everyone assumed was long settled turns out to have just been waiting — pipeline routes, border towns, and cut-off military installations across a region back on the edge of open war." },
+  { id: "pandora", title: "Pandora Tomorrow", year: "2004", cover: "pandora.png", banner: "pandora.png", logo: "pandora.png",
+    blurb: "A bioterrorism threat in Indonesia pulls Sam into a mission complicated by a former colleague presumed dead — and very much not.",
+    threat: "An Indonesian separatist militia backed by a bioterrorism threat serious enough that Third Echelon can't afford to treat it as a regional problem.",
+    location: "East Timor and the Indonesian archipelago", locationDesc: "A separatist uprising and a biological weapon nobody can afford to let slip loose, spread across island installations, refugee camps, and the shipping routes tying the region together." },
+  { id: "chaos", title: "Chaos Theory", year: "2005", cover: "chaos.png", banner: "chaos.png", logo: "chaos.png",
+    blurb: "Widely considered the series' high point, sending Sam through an escalating crisis across Asia that blurs the line between preventing a war and starting one.",
+    threat: "A cyberterrorism plot threading through East Asia, tangled up with the kind of information-warfare provocation that's one bad move away from an actual shooting war.",
+    location: "East and Southeast Asia", locationDesc: "A sweep from a Japanese cargo ferry to Cold War tensions still simmering under the surface of the region's shipping lanes and shadow economies." },
+  { id: "doubleagent", title: "Double Agent", year: "2006", cover: "doubleagent.png", banner: "doubleagent.png", logo: "doubleagent.png",
+    blurb: "Sam goes undercover inside a domestic terrorist cell, forced to earn the trust of people he's been sent to bring down.",
+    threat: "The JBA — a domestic terrorist cell Sam has to infiltrate and genuinely earn the trust of, blurring exactly who he's supposed to be loyal to by the end.",
+    location: "An Iceland prison yard, later American soil", locationDesc: "A cold-open prison infiltration that becomes a foothold inside the JBA's own operations, tracking the cell's reach as it turns toward targets back home." },
+  { id: "conviction", title: "Conviction", year: "2010", cover: "conviction.png", banner: "conviction.png", logo: "conviction.png",
+    blurb: "A more aggressive, personal Sam Fisher goes off the grid to find out who really killed his daughter — and why Third Echelon lied about it.",
+    threat: "A conspiracy inside Third Echelon's own leadership, using Sam's daughter's death as cover for something considerably larger than a single family tragedy.",
+    location: "Washington D.C. and beyond", locationDesc: "A string of increasingly personal locations as Sam's search stops being about following orders and starts being about following the truth, wherever inside his own agency it leads." },
+  { id: "blacklist", title: "Blacklist", year: "2013", cover: "blacklist.png", banner: "blacklist.png", logo: "blacklist.png",
+    blurb: "As the newly formed Fourth Echelon, Sam races against a countdown of escalating attacks threatening to strike U.S. soil one by one.",
+    threat: "The Engineers — a militant group carrying out an escalating countdown of attacks on American interests, each one a deadline Fourth Echelon has to beat.",
+    location: "A rotating list of global hotspots", locationDesc: "Missions run out of Fourth Echelon's mobile command aircraft, the Paladin, chasing each Blacklist attack to wherever in the world it's about to happen next." },
+];
+
 const SC_CATEGORIES = [
   { id: "characters", label: "Characters", desc: "The operatives, handlers, and allies who carry Third and Fourth Echelon's missions." },
   { id: "weapons", label: "Weapons", desc: "Standard-issue firearms and ammunition built for missions that end quietly." },
@@ -45,7 +72,7 @@ const SC_ITEMS = [
     blurb: "An amphibious variant of Sam's field gear, built for missions that start underwater and end somewhere considerably more dangerous." },
   { id: "mercenary-gear", name: "Four-Eyed Mercenary Gear", category: "uniforms", tag: "Off-the-Books Kit",
     blurb: "A rugged, exposed-tech variant of field armor used during Sam's off-the-books mercenary period." },
-  { id: "fourth-echelon-suit", name: "Fourth Echelon Field Suit", category: "uniforms", tag: "Modern Infiltration Kit",
+  { id: "echelon", name: "Fourth Echelon Field Suit", category: "uniforms", tag: "Modern Infiltration Kit",
     blurb: "A lighter, more modern infiltration outfit reflecting the agency's shift toward smaller, faster, deniable teams." },
 
   // ===== PISTOLS =====

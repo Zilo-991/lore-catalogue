@@ -119,6 +119,10 @@ main, .site-header, .footer { position: relative; z-index: 2; }
 
 /* ===== HERO ===== */
 .hero { min-height: 68vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 6rem 1.5rem 3rem; }
+.logo img{
+    height: auto;
+    width: 30%;
+}
 .title-display { font-size: clamp(2.4rem, 7vw, 4.4rem); line-height: 1; margin-bottom: 1rem; }
 .title-display.small { font-size: clamp(1.5rem, 4vw, 2.2rem); }
 .subtitle { color: var(--dim); max-width: 580px; margin-bottom: 2rem; font-size: 0.95rem; }
@@ -138,6 +142,91 @@ main, .site-header, .footer { position: relative; z-index: 2; }
 .section-head { max-width: 660px; margin-bottom: 2.4rem; }
 .section-desc { color: var(--dim); margin-top: 0.5rem; font-size: 0.92rem; }
 
+/* ===== GAMES GRID (hero -> series overview, links to game.html) ===== */
+.game-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+}
+.game-tile {
+  display: block;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.game-tile:hover { transform: translateY(-3px); border-color: var(--nv-green); }
+ 
+.tile-cover { position: relative; aspect-ratio: 3 / 4; background: var(--panel-2); }
+.tile-cover img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(0.7) brightness(0.7); }
+.tile-cover.img-missing .cat-fallback { display: flex; }
+.tile-cover.img-missing img { display: none; }
+ 
+.tile-info { padding: 0.9rem 1rem 1.1rem; }
+.tile-title { display: block; font-family: 'Chakra Petch', sans-serif; font-weight: 600; font-size: 1rem; color: var(--frost); margin-bottom: 0.3rem; }
+.tile-year { display: block; font-family: 'Space Mono', monospace; font-size: 0.75rem; color: var(--nv-green); }
+ 
+/* ===== PER-GAME PAGE (game.html): banner + tabs ===== */
+.game-banner {
+  position: relative;
+  height: 42vh;
+  min-height: 260px;
+  overflow: hidden;
+  background: var(--panel-2);
+}
+.game-banner img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.5) saturate(0.8); }
+.game-banner.img-missing .cat-fallback { display: flex; }
+.game-banner.img-missing img { display: none; }
+.game-banner-overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 1.8rem 2rem;
+  background: linear-gradient(0deg, rgba(6,10,8,0.95) 10%, rgba(6,10,8,0.2) 70%, transparent 100%);
+  border-bottom: 3px solid var(--nv-green);
+}
+.game-banner-overlay img{ width: 40%; height: 65%; object-fit:contain; display: block; filter: brightness(1);}
+.game-banner-year { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: var(--nv-green); margin-bottom: 0.3rem; }
+.game-banner-title { font-size: clamp(1.7rem, 5vw, 2.6rem); text-shadow: 0 2px 14px rgba(0,0,0,0.6); }
+ 
+.game-tabs-wrap { max-width: 1180px; margin: 0 auto; padding: 2.5rem 1.5rem 4.5rem; }
+.game-tabs { display: flex; gap: 0.6rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; flex-wrap: wrap; }
+.game-tab {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 0.92rem; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase;
+  color: var(--dim);
+  background: none; border: none; border-bottom: 2px solid transparent;
+  padding: 0.7rem 0.3rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.game-tab:hover { color: var(--frost); }
+.game-tab.active { color: var(--frost); border-bottom-color: var(--nv-green); }
+ 
+.threat-text { font-size: 1rem; line-height: 1.8; color: rgba(217,237,224,0.9); max-width: 720px; }
+ 
+.place-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 380px) 1fr;
+  gap: 1.6rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--nv-green);
+  overflow: hidden;
+}
+.place-img { position: relative; aspect-ratio: 4 / 3; background: var(--panel-2); }
+.place-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.place-img.img-missing .cat-fallback { display: flex; }
+.place-img.img-missing img { display: none; }
+.place-body { padding: 1.6rem 1.6rem 1.6rem 0; display: flex; flex-direction: column; justify-content: center; }
+.place-body h3 { font-family: 'Chakra Petch', sans-serif; font-size: 1.25rem; color: var(--nv-green); margin-bottom: 0.8rem; }
+.place-body p { font-size: 0.98rem; line-height: 1.75; color: rgba(217,237,224,0.9); }
+ 
+@media (max-width: 700px) {
+  .place-card { grid-template-columns: 1fr; }
+  .place-body { padding: 1.2rem 1.4rem 1.6rem; }
+  .game-banner { height: 32vh; min-height: 200px; }
+  .game-tabs-wrap { padding: 1.8rem 1rem 3rem; }
+}
 /* ===== CATEGORY GRID (matches the wiki's tile layout) ===== */
 .category-grid {
   display: grid;
@@ -180,7 +269,7 @@ main, .site-header, .footer { position: relative; z-index: 2; }
 /* ===== ITEM GRID (category.html) ===== */
 .item-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 1.1rem;
 }
 .item-card {
@@ -193,8 +282,8 @@ main, .site-header, .footer { position: relative; z-index: 2; }
 }
 .item-card:hover { border-left-color: var(--nv-green); }
 
-.item-thumb { position: relative; width: 110px; flex-shrink: 0; background: var(--panel-2); }
-.item-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(0.7) brightness(0.7); }
+.item-thumb { position: relative; width: 195px; flex-shrink: 0; background: var(--panel-2); }
+.item-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; filter: saturate(0.7) brightness(0.7); }
 .item-thumb .cat-fallback span { font-size: 0.7rem; }
 .item-thumb.img-missing .cat-fallback { display: flex; }
 .item-thumb.img-missing img { display: none; }
@@ -210,7 +299,7 @@ main, .site-header, .footer { position: relative; z-index: 2; }
 @media (max-width: 480px) {
   .category-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
   .item-card { flex-direction: column; }
-  .item-thumb { width: 100%; height: 140px; }
+  .item-thumb { width: auto; height: auto; }
   .section { padding-left: 1rem; padding-right: 1rem; }
 }
 
