@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HITMAN: World of Assassination</title>
+<link rel ="icon" type="image/ico" href="images/woa.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="hitman.css">
+</head>
+<body>
+
+<div class="page-bg" aria-hidden="true">
+  <img src="images/page-bg.jpg" alt="">
+  <span class="page-bg-fallback"></span>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+      <img src="images/logo.png" id = "logo">
+      <span class="barcode" aria-hidden="true"></span>
+    </a>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#games" class="tab">The Trilogy</a>
+      <a href="#roster" class="tab">Handlers</a>
+    </nav>
+    <div class="header-actions">
+      <a href="../index.html" class="btn btn-outline"><i class="fa-solid fa-house"></i></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="images/banners/hero.png" alt="" aria-hidden="true">
+      <span class="hero-bg-fallback" aria-hidden="true"></span>
+    </div>
+    <div class="hero-panel reveal">
+      <p class="eyebrow">International Contract Agency — File Access Granted</p>
+      <div class="logo">
+            <img src="images/hm.png" id = "logo1">
+        </div>
+      <p class="subtitle">Three games, one perfect asset. From a Parisian fashion show to a Carpathian mountain fortress, every contract the ICA ever sanctioned for Agent 47 — cross-referenced by target and destination.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">Games</span>
+          <span class="meta-value">3</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Sanctioned Targets</span>
+          <span class="meta-value">11</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Destinations</span>
+          <span class="meta-value">17</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow">Open a File</p>
+      <h2 class="title-display small">The Trilogy</h2>
+      <p class="section-desc">Each entry holds its own targets and its own destinations. Pull one to review the brief.</p>
+    </div>
+    <div id="games-container" class="game-tile-grid"></div>
+  </section>
+
+  <section id="roster" class="section alt">
+    <div class="section-head reveal">
+      <p class="eyebrow">Constants</p>
+      <h2 class="title-display small">Agent 47 &amp; Handler</h2>
+      <p class="section-desc">The two people who show up in every file, no matter which contract you're reviewing.</p>
+    </div>
+    <div id="roster-container" class="item-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — HITMAN: World of Assassination is a trademark of IO Interactive. This page is an original fan-made summary and is not affiliated with or endorsed by IO Interactive.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="reveal.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

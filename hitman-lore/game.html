@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">HITMAN: World of Assassination</title>
+<link rel ="icon" type="image/ico" href="images/woa.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="hitman.css">
+</head>
+<body>
+
+<div class="page-bg" aria-hidden="true">
+  <img src="images/page-bg.jpg" alt="">
+  <span class="page-bg-fallback"></span>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="hitman.html" class="brand">
+      <img src="images/logo.png" id = "logo">
+      <span class="barcode" aria-hidden="true"></span>
+    </a>
+    <nav class="tabs">
+      <a href="hitman.html#games" class="tab">← Back to Trilogy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="game-view">
+    <!-- populated by game.js -->
+  </section>
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — HITMAN: World of Assassination is a trademark of IO Interactive. This page is an original fan-made summary and is not affiliated with or endorsed by IO Interactive.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="reveal.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
