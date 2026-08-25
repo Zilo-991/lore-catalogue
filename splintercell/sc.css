@@ -269,7 +269,7 @@ main, .site-header, .footer { position: relative; z-index: 2; }
 /* ===== ITEM GRID (category.html) ===== */
 .item-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.1rem;
 }
 .item-card {
