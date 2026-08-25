@@ -15,7 +15,7 @@ if (character) {
   const game = HM_GAMES.find(g => g.id === character.game);
   const isTarget = character.category === 'target';
   const isWeapon = character.category === 'weapon';
-  const statusLabel = isTarget ? 'Sanctioned Target' : isWeapon ? 'Signature Equipment' : 'Field Constant';
+  const statusLabel = isTarget ? 'Sanctioned Target(s)' : isWeapon ? 'Signature Equipment' : 'Field Constant';
 
   // point the header's back link at this character's own game page
   const headerBack = document.querySelector('.site-header .tab');
