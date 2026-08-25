@@ -5,7 +5,7 @@
 */
 
 const HM_GAMES = [
-  { id: "hitman1", title: "HITMAN", year: "2016", cover: "hitman1.png", banner: "hitman1.png",  logo: "hitman1.png",
+  { id: "hitman1", title: "HITMAN ™", year: "2016", cover: "hitman1.png", banner: "hitman1.png",  logo: "hitman1.png",
     tagline: "The ICA reboots its most valuable asset.",
     brief: "Agent 47 returns to active duty in a rebuilt International Contract Agency, taking on sanctioned kills that read like a world tour of the ultra-wealthy — a Paris fashion show, a Sicilian coastline, a Marrakesh embassy, a Bangkok hotel, a Colorado militia compound, and a Hokkaido hospital built for people who'd rather not be found.",
     locations: [

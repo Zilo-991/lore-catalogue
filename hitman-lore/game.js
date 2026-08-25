@@ -36,7 +36,7 @@ if (game) {
       <span class="img-fallback"><span>${game.title}</span></span>
       <div class="game-banner-overlay">
         <span class="game-banner-year">${game.year}</span>
-        <h1 class="title-display game-banner-title">${game.title}</h1>
+        <img src="images/logos/${game.logo}">
       </div>
     </div>
 
