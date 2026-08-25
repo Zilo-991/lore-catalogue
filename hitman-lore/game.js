@@ -25,7 +25,7 @@ function targetCard(item) {
 }
 
 if (game) {
-  pageTitle.textContent = `${game.title}`;
+  pageTitle.textContent = `${game.title}`
 
   const targets = HM_ITEMS.filter(i => i.category === 'target' && i.game === game.id);
   const agent47 = HM_ITEMS.find(i => i.id === 'agent-47');
@@ -36,7 +36,7 @@ if (game) {
       <span class="img-fallback"><span>${game.title}</span></span>
       <div class="game-banner-overlay">
         <span class="game-banner-year">${game.year}</span>
-        <img src="images/logos/${game.logo}">
+        <h1 class="title-display game-banner-title">${game.title}</h1>
       </div>
     </div>
 
@@ -68,15 +68,15 @@ if (game) {
       </div>
 
       <div class="game-panel" id="panel-destinations" role="tabpanel" hidden>
-        <div class="place-card">
-          <div class="place-img">
-            <img src="images/places/${game.id}.jpg" alt="${game.title} destinations">
-            <span class="img-fallback"><span>Destinations</span></span>
-          </div>
-          <div class="place-body">
-            <h3>Destinations</h3>
-            <p class="locations-list">${game.locationsList}</p>
-          </div>
+        <div class="destination-grid">
+          ${game.locations.map((loc, i) => `
+            <div class="destination-card">
+              <span class="dest-index">${String(i + 1).padStart(2, '0')}</span>
+              <div class="dest-body">
+                <h4>${loc.name}</h4>
+                <p>${loc.desc}</p>
+              </div>
+            </div>`).join('')}
         </div>
       </div>
     </div>
@@ -89,11 +89,9 @@ if (game) {
     const img = thumb.querySelector('img');
     img?.addEventListener('error', () => thumb.classList.add('img-missing'));
   });
-  const placeImg = view.querySelector('.place-img img');
-  placeImg?.addEventListener('error', () => view.querySelector('.place-img').classList.add('img-missing'));
-
   // reveal + stagger
   staggerReveal(view.querySelectorAll('#panel-brief .item-card'));
+  staggerReveal(view.querySelectorAll('.destination-card'));
   initReveal();
 
   // tab switching
@@ -107,7 +105,7 @@ if (game) {
       tab.setAttribute('aria-selected', 'true');
       const panel = document.getElementById(`panel-${tab.dataset.panel}`);
       panel.hidden = false;
-      staggerReveal(panel.querySelectorAll('.item-card:not(.in-view)'));
+      staggerReveal(panel.querySelectorAll('.item-card:not(.in-view), .destination-card:not(.in-view)'));
       initReveal(panel);
     });
   });

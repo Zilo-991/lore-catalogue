@@ -43,6 +43,14 @@ if (rosterContainer) {
   staggerReveal(rosterContainer.querySelectorAll('.item-card'));
 }
 
+// ===== Weapons grid =====
+const weaponsContainer = document.getElementById('weapons-container');
+if (weaponsContainer) {
+  const weapons = HM_ITEMS.filter(i => i.category === 'weapon');
+  weaponsContainer.innerHTML = weapons.map(itemCard).join('');
+  staggerReveal(weaponsContainer.querySelectorAll('.item-card'));
+}
+
 // ===== Image fallbacks =====
 document.querySelectorAll('.tile-cover, .item-thumb').forEach((el) => {
   const img = el.querySelector('img');

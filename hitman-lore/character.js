@@ -14,6 +14,8 @@ if (character) {
 
   const game = HM_GAMES.find(g => g.id === character.game);
   const isTarget = character.category === 'target';
+  const isWeapon = character.category === 'weapon';
+  const statusLabel = isTarget ? 'Sanctioned Target' : isWeapon ? 'Signature Equipment' : 'Field Constant';
 
   // point the header's back link at this character's own game page
   const headerBack = document.querySelector('.site-header .tab');
@@ -23,7 +25,7 @@ if (character) {
   }
 
   view.innerHTML = `
-    <div class="file-scene ${isTarget ? 'target' : ''}">
+    <div class="file-scene ${isTarget ? 'target' : isWeapon ? 'weapon' : ''}">
       <div class="file-portrait-scene">
         <img src="images/roster/${character.id}.jpg" alt="${character.name}">
         <span class="portrait-fallback"><span>${character.name}</span></span>
@@ -38,7 +40,7 @@ if (character) {
         </div>
         <p class="file-blurb">${character.blurb}</p>
         <div class="file-meta-row">
-          <span class="status-pill">${isTarget ? 'Sanctioned Target' : 'Field Constant'}</span>
+          <span class="status-pill">${statusLabel}</span>
         </div>
       </div>
     </div>

@@ -318,22 +318,31 @@ a { color: inherit; text-decoration: none; }
 
 .brief-text { font-size: 1rem; line-height: 1.8; color: rgba(242,242,240,0.88); max-width: 720px; margin-top: 1.5rem; }
 
-.place-card {
-  display: grid; grid-template-columns: minmax(220px, 380px) 1fr; gap: 1.6rem;
-  background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--signal);
-  overflow: hidden;
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
 }
-.place-img { position: relative; aspect-ratio: 4 / 3; background: var(--panel-2); }
-.place-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.place-img.img-missing .img-fallback { display: flex; }
-.place-img.img-missing img { display: none; }
-.place-body { padding: 1.6rem 1.6rem 1.6rem 0; display: flex; flex-direction: column; justify-content: center; }
-.place-body h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 0.02em; color: var(--signal); margin-bottom: 0.8rem; }
-.locations-list { font-size: 1rem; line-height: 1.8; color: rgba(242,242,240,0.9); }
-
+.destination-card {
+  display: flex; gap: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--signal);
+  padding: 1.1rem 1.2rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.destination-card:hover { transform: translateY(-2px); border-left-color: var(--frost); }
+.dest-index {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--signal);
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+.dest-body h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.15rem; letter-spacing: 0.02em; color: var(--frost); margin-bottom: 0.4rem; }
+.dest-body p { font-size: 0.88rem; line-height: 1.55; color: rgba(242,242,240,0.82); }
+ 
 @media (max-width: 700px) {
-  .place-card { grid-template-columns: 1fr; }
-  .place-body { padding: 1.2rem 1.4rem 1.6rem; }
   .game-banner { height: 32vh; min-height: 200px; }
   .game-tabs-wrap { padding: 1.8rem 1rem 3rem; }
 }
@@ -348,7 +357,7 @@ a { color: inherit; text-decoration: none; }
 .file-scene.target { --role-accent: var(--signal); }
 
 .file-portrait-scene { position: absolute; inset: 0; z-index: 0; }
-.file-portrait-scene img { padding-left: 60%; width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.file-portrait-scene img { padding-left: 50%; width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
 .portrait-fallback {
   display: none; position: absolute; inset: 0;
   align-items: center; justify-content: center;
