@@ -48,7 +48,7 @@ const HM_ITEMS = [
   { id: "diana", category: "protagonist", name: "Diana Burnwood", game: "all", tag: "ICA Handler",
     epithet: "The Voice That Never Panics",
     blurb: "47's longtime handler, running every contract from a calm, clinical remove — until her own history with Providence turns her into far more than just the voice in his earpiece." },
-  { id: "lucas-grey", category: "protagonist", name: "Lucas Grey", game: "hitman2" , tag: "Shadow Client",
+  { id: "lucas-grey", category: "protagonist", name: "Lucas Grey", game: "all" , tag: "Shadow Client",
     epithet: "Spec Ops Master Strategist",
     blurb: "A childhood friend of Agent 47, and is later revealed to be Subject 6, seasoned mercenary on a mission to take down Providence, an elusive power cabal with unprecedented global reach." },
 
