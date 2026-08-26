@@ -9,6 +9,10 @@ const pageTitle = document.getElementById('page-title');
 const pageBgImg = document.querySelector('.page-bg img');
 pageBgImg?.addEventListener('error', () => pageBgImg.closest('.page-bg')?.classList.add('img-missing'));
 
+function slugify(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
 function targetCard(item) {
   return `
     <a class="item-card" href="character.html?id=${item.id}">
@@ -44,7 +48,7 @@ if (game) {
       <div class="game-tabs" role="tablist">
         <button class="game-tab active" role="tab" aria-selected="true" data-panel="brief">Brief</button>
         <button class="game-tab" role="tab" aria-selected="false" data-panel="targets">Targets <span class="tab-count">${targets.length}</span></button>
-        <button class="game-tab" role="tab" aria-selected="false" data-panel="destinations">Destinations</button>
+        <button class="game-tab" role="tab" aria-selected="false" data-panel="destinations">Destinations <span class="tab-count">${game.locations.length}</span></button>
       </div>
 
       <div class="game-panel" id="panel-brief" role="tabpanel">
@@ -71,7 +75,11 @@ if (game) {
         <div class="destination-grid">
           ${game.locations.map((loc, i) => `
             <div class="destination-card">
-              <span class="dest-index">${String(i + 1).padStart(2, '0')}</span>
+              <div class="dest-thumb">
+                <img src="images/destinations/${game.id}-${slugify(loc.name)}.jpg" alt="${loc.name}" loading="lazy">
+                <span class="img-fallback"><span>${loc.name}</span></span>
+                <span class="dest-index">${String(i + 1).padStart(2, '0')}</span>
+              </div>
               <div class="dest-body">
                 <h4>${loc.name}</h4>
                 <p>${loc.desc}</p>
@@ -86,6 +94,10 @@ if (game) {
   const bannerImg = view.querySelector('.game-banner img');
   bannerImg.addEventListener('error', () => view.querySelector('.game-banner').classList.add('img-missing'));
   view.querySelectorAll('.item-thumb').forEach((thumb) => {
+    const img = thumb.querySelector('img');
+    img?.addEventListener('error', () => thumb.classList.add('img-missing'));
+  });
+  view.querySelectorAll('.dest-thumb').forEach((thumb) => {
     const img = thumb.querySelector('img');
     img?.addEventListener('error', () => thumb.classList.add('img-missing'));
   });
