@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uncharted Collection</title>
+<link rel ="icon" type="image/ico" href="images/uncharted.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="uc.css">
+</head>
+<body>
+
+<div class="paper-grain"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+            <img src="images/logo.png" id = "logo1">
+    </a>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#games" class="tab">Expeditions</a>
+    </nav>
+    <div class="header-actions">
+      <a href="../index.html" class="btn btn-outline"><i class="fa-solid fa-house"></i></a></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="images/banners/hero.jpg" alt="" aria-hidden="true">
+      <span class="hero-bg-fallback" aria-hidden="true"></span>
+    </div>
+    <div class="hero-panel reveal">
+      <p class="eyebrow">Field Journal — Recovered Pages</p>
+      <p class="subtitle">Five expeditions, one very unlucky treasure hunter. From a fog-locked Pacific island to a pirate colony lost off Madagascar, every job Nathan Drake couldn't talk himself out of.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">Expeditions</span>
+          <span class="meta-value">5</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Fortune Hunters</span>
+          <span class="meta-value">6</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Rivals</span>
+          <span class="meta-value">7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow">Pick a Page</p>
+      <h2 class="title-adventure small">The Expeditions</h2>
+      <p class="section-desc">Open one for its hunters, its rivals, and the ground the whole job actually happened on.</p>
+    </div>
+    <div id="games-container" class="game-tile-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Uncharted is a trademark of Sony Interactive Entertainment / Naughty Dog. This page is an original fan-made summary and is not affiliated with or endorsed by either.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="reveal.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
