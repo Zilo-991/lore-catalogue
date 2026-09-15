@@ -277,6 +277,7 @@ a { color: inherit; text-decoration: none; }
   position: relative; min-height: 82vh; overflow: hidden;
   display: flex; align-items: center; background: var(--void);
 }
+.file-portrait-scene img{padding-left: 1px;}
 .file-scene.rival { --role-accent: var(--danger); }
 
 .file-portrait-scene { position: absolute; inset: 0; z-index: 0; }
