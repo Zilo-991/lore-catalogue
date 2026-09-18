@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortal Kombat Archive</title>
+<link rel ="icon" type="image/ico" href="images/mk-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="mk.css">
+</head>
+<body>
+
+<div class="page-bg" aria-hidden="true">
+  <img src="images/mk-bg.jpg" alt="">
+  <span class="page-bg-fallback"></span>
+</div>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+      <img src="images/mk-logo.png" id = "logo1">
+    </a>
+    <nav class="tabs" id="nav">
+      <a href="#hero" class="tab active">Overview</a>
+      <a href="#games" class="tab">Tournaments</a>
+    </nav>
+    <div class="header-actions">
+      <a href="../index.html" class="btn btn-outline"><i class="fa-solid fa-house"></i></a></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="images/banners/hero.jpg" alt="" aria-hidden="true">
+      <span class="hero-bg-fallback" aria-hidden="true"></span>
+    </div>
+    <div class="hero-panel reveal">
+      <p class="eyebrow">Flawless Victory — Records Sealed</p>
+      <h1 class="title-kombat">MKX &rarr; MK1</h1>
+      <p class="subtitle">Every fighter sanctioned for combat across three tournaments — from Mortal Kombat X's new generation to MK1's timeline-rewriting reboot. Base rosters and every Kombat Pack, side by side.</p>
+      <div class="hero-meta">
+        <div class="meta-block">
+          <span class="meta-label">Tournaments</span>
+          <span class="meta-value">3</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Unique Fighters</span>
+          <span class="meta-value">69</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Total Roster Slots</span>
+          <span class="meta-value">106</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<video class="fire" src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4" autoplay="" muted="" loop="" playsinline=""></video>
+  <section id="games" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow">Choose Your Tournament</p>
+      <h2 class="title-kombat small">The Tournaments</h2>
+      <p class="section-desc">Each entry holds its base roster and every Kombat Pack, sub-grouped by release wave.</p>
+    </div>
+    <div id="games-container" class="game-tile-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>ZILO ARCHIVE — Mortal Kombat is a trademark of Warner Bros. Games / NetherRealm Studios. Guest fighters belong to their respective owners. This page is an original fan-made summary and is not affiliated with or endorsed by any of them.</p>
+</footer>
+
+<script src="mk-data.js"></script>
+<script src="mk-reveal.js"></script>
+<script src="mk-script.js"></script>
+</body>
+</html>
